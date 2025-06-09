@@ -16,9 +16,15 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 | ------                     | ------                                              | -----------   | ---------------- |
 | KM                         | INT                                                 | NOT NULL      |
 | ------                     | ------                                              | -----------   | ---------------- |
+| TARGA                      | CHAR(7)                                             | NOT NULL      |
+| ------                     | ------                                              | -----------   | ---------------- |
+| NUM. PROPRIETARI           | SMALLINT                                            | NOT NULL      | INDEX            |
+| ------                     | ------                                              | -----------   | ---------------- |
+| ULTIMO PROPRIETARIO        | VARCHAR(50)                                         | NOT NULL      |
+| ------                     | ------                                              | -----------   | ---------------- |
 | PREZZO                     | SMALLINT                                            | NOT NULL      | INDEX            |
 | ------                     | ------                                              | -----------   | ---------------- |
 | CONDIZIONI AUTO            | ENUM(Pess, buone, ottime)                           | NOT NULL      | INDEX            |
 | ------                     | ------                                              | -----------   | ---------------- |
-| STATO AUTO VENDITA'        | ENUM(Pres, vend)                                    | NOT NULL,     |
+| STATO AUTO VENDITA'        | ENUM(Pres, vend)                                    | NOT NULL,     | INDEX            |
 | ------                     | ------                                              | -----------   | ---------------- |
