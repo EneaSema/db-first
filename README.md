@@ -1,30 +1,30 @@
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
 
-| NAME                       | TIPO                                                | VARIABILI     | CARATTERISTICHE  |
-| -------------------------- | --------------------------------------------------- | ------------- | ---------------- |
-| ID                         | INT                                                 | NOT NULL, A.I | PRIMARY KEY      |
-| ------                     | ------                                              | -----------   | ---------------- |
-| NOME CITTA' CONCESSIONARIO | VARCHAR(50)                                         | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| ANNO IMMATRICOLAZIONE      | DATE                                                | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| MODELLO                    | VARCHAR(20)                                         | NOT NULL      | INDEX            |
-| -------------------        | --------------------------------------------------- | -----------   | ---------------- |
-| TIPO                       | VARCHAR(20)                                         | NOT NULL      |
-| ------                     | ------                                              | -----------   | ---------------- |
-| IMP. ALIMENTAZIONE         | ENUM(Benz., diesel, gpl, metano, elettrica, ibrida) | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| KM                         | INT                                                 | NOT NULL      |
-| ------                     | ------                                              | -----------   | ---------------- |
-| TARGA                      | CHAR(7)                                             | NOT NULL      |
-| ------                     | ------                                              | -----------   | ---------------- |
-| NUM. PROPRIETARI           | SMALLINT                                            | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| ULTIMO PROPRIETARIO        | VARCHAR(50)                                         | NOT NULL      |
-| ------                     | ------                                              | -----------   | ---------------- |
-| PREZZO                     | SMALLINT                                            | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| CONDIZIONI AUTO            | ENUM(Pess, buone, ottime)                           | NOT NULL      | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
-| STATO AUTO VENDITA'        | ENUM(Pres, vend)                                    | NOT NULL,     | INDEX            |
-| ------                     | ------                                              | -----------   | ---------------- |
+| NAME                 | TYPE                                                | VARIABILS     | CHARACTHERS      |
+| -------------------- | --------------------------------------------------- | ------------- | ---------------- |
+| ID                   | INT                                                 | NOT NULL, A.I | PRIMARY KEY      |
+| ------               | ------                                              | -----------   | ---------------- |
+| NAME'S CITY DEALER   | VARCHAR(250)                                        | NOT NULL      |                  |
+| ------               | ------                                              | -----------   | ---------------- |
+| YEAR OF REGISTRATION | DATE                                                | NOT NULL      | INDEX            |
+| ------               | ------                                              | -----------   | ---------------- |
+| MODEL                | VARCHAR(250)                                        | NOT NULL      | INDEX            |
+| -------------------  | --------------------------------------------------- | -----------   | ---------------- |
+| TYPE                 | VARCHAR(250)                                        | NOT NULL      |
+| ------               | ------                                              | -----------   | ---------------- |
+| POWER SYSTEM         | ENUM(Benz., diesel, gpl, metano, elettrica, ibrida) | NOT NULL      | INDEX            |
+| ------               | ------                                              | -----------   | ---------------- |
+| KM                   | MEDIUMINT                                           | NOT NULL      |
+| ------               | ------                                              | -----------   | ---------------- |
+| PLATE                | CHAR(7)                                             | NOT NULL      |
+| ------               | ------                                              | -----------   | ---------------- |
+| NUM. OF OWNERS       | TINYINT                                             | NOT NULL      |                  |
+| ------               | ------                                              | -----------   | ---------------- |
+| LAST OWNER           | VARCHAR(50)                                         | NOT NULL      |
+| ------               | ------                                              | -----------   | ---------------- |
+| PRICE                | DECIMAL(10,5)                                       | NOT NULL      | INDEX            |
+| ------               | ------                                              | -----------   | ---------------- |
+| CAR CONDITIONS       | ENUM(Pess, buone, ottime)                           | NOT NULL      | INDEX            |
+| ------               | ------                                              | -----------   | ---------------- |
+| AVAILABLE            | BOOL                                                | NOT NULL,     | INDEX            |
+| ------               | ------                                              | -----------   | ---------------- |
